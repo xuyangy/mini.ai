@@ -1109,7 +1109,7 @@ H.builtin_textobjects = {
   -- Brackets
   ['b'] = { { '%b()', '%b[]', '%b{}' }, '^.().*().$' },
   -- Function call
-  ['f'] = MiniAi.gen_spec.function_call(),
+  ['F'] = MiniAi.gen_spec.function_call(),
   -- Tag
   ['t'] = { '<(%w-)%f[^<%w][^<>]->.-</%1>', '^<.->().*()</[^/]->$' },
   -- Quotes
